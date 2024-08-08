@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filippagni - Chi siamo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff7e6;
+            color: #333;
+        }
+        header {
+            background-color: #ffb347;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        nav {
+            background-color: #ffa07a;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ff8c00;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1 {
+            color: #ff8c00;
+        }
+        .bio {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .bio p {
+            line-height: 1.6;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .images img {
+            width: calc(33.333% - 20px);
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #fff;
+            background-color: #ff8c00;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-right: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .social-links a.instagram {
+            background-color: #E4405F;
+        }
+        .social-links a.x {
+            background-color: #1DA1F2;
+        }
+        .menu-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            display: none;
+            font-size: 30px;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                background-color: #ffa07a;
+                width: 100%;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+            .menu-icon {
+                display: block;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <h1>Filippagni</h1>
+        <p>Il tuo punto di riferimento per la skincare</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi siamo</a>
+        <a href="blog.html">Blog</a>
+        <a href="prodotti.html">Prodotti</a>
+        <a href="contatti.html">Contatti</a>
+    </nav>
+    <div class="container">
+        <h1>Chi siamo</h1>
+        <div class="bio">
+            <p>Ciao! Sono Filippagni, un blogger appassionato di skincare, residente nella vibrante città di Milano. Con un animo vivace e un grande amore per la bellezza, mi dedico a condividere consigli pratici e segreti per una pelle sana e radiosa. Essendo apertamente omosessuale, porto con orgoglio la mia identità in tutto ciò che faccio, credendo fermamente nell'importanza dell'autenticità e dell'amore per se stessi.</p>
+            <p>Il mio obiettivo è aiutare chiunque a sentirsi sicuro e splendente nella propria pelle, fornendo suggerimenti personalizzati, recensioni di prodotti e guide passo-passo per ogni tipo di pelle e necessità. Unisciti a me in questo viaggio verso una skincare consapevole e scopri come prenderti cura di te in modo semplice e divertente. Facciamo brillare la nostra bellezza interiore ed esteriore, insieme!</p>
+        </div>
+        <div class="images">
+            <img src="images/prodotto1.jpg" alt="Prodotto di skincare 1">
+            <img src="images/prodotto2.jpg" alt="Prodotto di skincare 2">
+            <img src="images/prodotto3.jpg" alt="Prodotto di skincare 3">
+            <img src="images/filippagni1.jpg" alt="Filippagni 1">
+            <img src="images/filippagni2.jpg" alt="Filippagni 2">
+            <img src="images/filippagni3.jpg" alt="Filippagni 3">
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/tuo_account_instagram" class="instagram">Seguimi su Instagram</a>
+            <a href="https://twitter.com/tuo_account_x" class="x">Seguimi su X</a>
+        </div>
+    </div>
+</body>
+</html>

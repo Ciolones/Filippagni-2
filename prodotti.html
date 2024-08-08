@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filippagni - Prodotti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff7e6;
+            color: #333;
+        }
+        header {
+            background-color: #ffb347;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        nav {
+            background-color: #ffa07a;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ff8c00;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1 {
+            color: #ff8c00;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ff8c00;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h2 {
+            color: #ff8c00;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product p {
+            margin: 0;
+        }
+        .menu-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            display: none;
+            font-size: 30px;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                background-color: #ffa07a;
+                width: 100%;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+            .menu-icon {
+                display: block;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <h1>Filippagni - Prodotti</h1>
+        <p>Scopri i migliori prodotti per la tua skincare</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi siamo</a>
+        <a href="blog.html">Blog</a>
+        <a href="prodotti.html">Prodotti</a>
+        <a href="contatti.html">Contatti</a>
+    </nav>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Cerca tra i prodotti...">
+        </div>
+        <div class="product-list">
+            <!-- Loop for 50 products -->
+            <!-- Example Product -->
+            <div class="product">
+                <img src="images/prodotto1.jpg" alt="Prodotto 1">
+                <h2>Prodotto 1</h2>
+                <p>Recensione dettagliata del Prodotto 1...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto2.jpg" alt="Prodotto 2">
+                <h2>Prodotto 2</h2>
+                <p>Recensione dettagliata del Prodotto 2...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto3.jpg" alt="Prodotto 3">
+                <h2>Prodotto 3</h2>
+                <p>Recensione dettagliata del Prodotto 3...</p>
+            </div>
+            <!-- Add more products as needed, up to 50 -->
+            <div class="product">
+                <img src="images/prodotto4.jpg" alt="Prodotto 4">
+                <h2>Prodotto 4</h2>
+                <p>Recensione dettagliata del Prodotto 4...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto5.jpg" alt="Prodotto 5">
+                <h2>Prodotto 5</h2>
+                <p>Recensione dettagliata del Prodotto 5...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto6.jpg" alt="Prodotto 6">
+                <h2>Prodotto 6</h2>
+                <p>Recensione dettagliata del Prodotto 6...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto7.jpg" alt="Prodotto 7">
+                <h2>Prodotto 7</h2>
+                <p>Recensione dettagliata del Prodotto 7...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto8.jpg" alt="Prodotto 8">
+                <h2>Prodotto 8</h2>
+                <p>Recensione dettagliata del Prodotto 8...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto9.jpg" alt="Prodotto 9">
+                <h2>Prodotto 9</h2>
+                <p>Recensione dettagliata del Prodotto 9...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto10.jpg" alt="Prodotto 10">
+                <h2>Prodotto 10</h2>
+                <p>Recensione dettagliata del Prodotto 10...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto11.jpg" alt="Prodotto 11">
+                <h2>Prodotto 11</h2>
+                <p>Recensione dettagliata del Prodotto 11...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto12.jpg" alt="Prodotto 12">
+                <h2>Prodotto 12</h2>
+                <p>Recensione dettagliata del Prodotto 12...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto13.jpg" alt="Prodotto 13">
+                <h2>Prodotto 13</h2>
+                <p>Recensione dettagliata del Prodotto 13...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto14.jpg" alt="Prodotto 14">
+                <h2>Prodotto 14</h2>
+                <p>Recensione dettagliata del Prodotto 14...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto15.jpg" alt="Prodotto 15">
+                <h2>Prodotto 15</h2>
+                <p>Recensione dettagliata del Prodotto 15...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto16.jpg" alt="Prodotto 16">
+                <h2>Prodotto 16</h2>
+                <p>Recensione dettagliata del Prodotto 16...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto17.jpg" alt="Prodotto 17">
+                <h2>Prodotto 17</h2>
+                <p>Recensione dettagliata del Prodotto 17...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto18.jpg" alt="Prodotto 18">
+                <h2>Prodotto 18</h2>
+                <p>Recensione dettagliata del Prodotto 18...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto19.jpg" alt="Prodotto 19">
+                <h2>Prodotto 19</h2>
+                <p>Recensione dettagliata del Prodotto 19...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto20.jpg" alt="Prodotto 20">
+                <h2>Prodotto 20</h2>
+                <p>Recensione dettagliata del Prodotto 20...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto21.jpg" alt="Prodotto 21">
+                <h2>Prodotto 21</h2>
+                <p>Recensione dettagliata del Prodotto 21...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto22.jpg" alt="Prodotto 22">
+                <h2>Prodotto 22</h2>
+                <p>Recensione dettagliata del Prodotto 22...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto23.jpg" alt="Prodotto 23">
+                <h2>Prodotto 23</h2>
+                <p>Recensione dettagliata del Prodotto 23...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto24.jpg" alt="Prodotto 24">
+                <h2>Prodotto 24</h2>
+                <p>Recensione dettagliata del Prodotto 24...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto25.jpg" alt="Prodotto 25">
+                <h2>Prodotto 25</h2>
+                <p>Recensione dettagliata del Prodotto 25...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto26.jpg" alt="Prodotto 26">
+                <h2>Prodotto 26</h2>
+                <p>Recensione dettagliata del Prodotto 26...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto27.jpg" alt="Prodotto 27">
+                <h2>Prodotto 27</h2>
+                <p>Recensione dettagliata del Prodotto 27...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto28.jpg" alt="Prodotto 28">
+                <h2>Prodotto 28</h2>
+                <p>Recensione dettagliata del Prodotto 28...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto29.jpg" alt="Prodotto 29">
+                <h2>Prodotto 29</h2>
+                <p>Recensione dettagliata del Prodotto 29...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto30.jpg" alt="Prodotto 30">
+                <h2>Prodotto 30</h2>
+                <p>Recensione dettagliata del Prodotto 30...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto31.jpg" alt="Prodotto 31">
+                <h2>Prodotto 31</h2>
+                <p>Recensione dettagliata del Prodotto 31...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto32.jpg" alt="Prodotto 32">
+                <h2>Prodotto 32</h2>
+                <p>Recensione dettagliata del Prodotto 32...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto33.jpg" alt="Prodotto 33">
+                <h2>Prodotto 33</h2>
+                <p>Recensione dettagliata del Prodotto 33...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto34.jpg" alt="Prodotto 34">
+                <h2>Prodotto 34</h2>
+                <p>Recensione dettagliata del Prodotto 34...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto35.jpg" alt="Prodotto 35">
+                <h2>Prodotto 35</h2>
+                <p>Recensione dettagliata del Prodotto 35...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto36.jpg" alt="Prodotto 36">
+                <h2>Prodotto 36</h2>
+                <p>Recensione dettagliata del Prodotto 36...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto37.jpg" alt="Prodotto 37">
+                <h2>Prodotto 37</h2>
+                <p>Recensione dettagliata del Prodotto 37...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto38.jpg" alt="Prodotto 38">
+                <h2>Prodotto 38</h2>
+                <p>Recensione dettagliata del Prodotto 38...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto39.jpg" alt="Prodotto 39">
+                <h2>Prodotto 39</h2>
+                <p>Recensione dettagliata del Prodotto 39...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto40.jpg" alt="Prodotto 40">
+                <h2>Prodotto 40</h2>
+                <p>Recensione dettagliata del Prodotto 40...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto41.jpg" alt="Prodotto 41">
+                <h2>Prodotto 41</h2>
+                <p>Recensione dettagliata del Prodotto 41...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto42.jpg" alt="Prodotto 42">
+                <h2>Prodotto 42</h2>
+                <p>Recensione dettagliata del Prodotto 42...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto43.jpg" alt="Prodotto 43">
+                <h2>Prodotto 43</h2>
+                <p>Recensione dettagliata del Prodotto 43...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto44.jpg" alt="Prodotto 44">
+                <h2>Prodotto 44</h2>
+                <p>Recensione dettagliata del Prodotto 44...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto45.jpg" alt="Prodotto 45">
+                <h2>Prodotto 45</h2>
+                <p>Recensione dettagliata del Prodotto 45...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto46.jpg" alt="Prodotto 46">
+                <h2>Prodotto 46</h2>
+                <p>Recensione dettagliata del Prodotto 46...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto47.jpg" alt="Prodotto 47">
+                <h2>Prodotto 47</h2>
+                <p>Recensione dettagliata del Prodotto 47...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto48.jpg" alt="Prodotto 48">
+                <h2>Prodotto 48</h2>
+                <p>Recensione dettagliata del Prodotto 48...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto49.jpg" alt="Prodotto 49">
+                <h2>Prodotto 49</h2>
+                <p>Recensione dettagliata del Prodotto 49...</p>
+            </div>
+            <div class="product">
+                <img src="images/prodotto50.jpg" alt="Prodotto 50">
+                <h2>Prodotto 50</h2>
+                <p>Recensione dettagliata del Prodotto 50...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

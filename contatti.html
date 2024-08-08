@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filippagni - Contatti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff7e6;
+            color: #333;
+        }
+        header {
+            background-color: #ffb347;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        nav {
+            background-color: #ffa07a;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ff8c00;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            padding-top: 80px; /* Adjust for fixed nav */
+        }
+        h1 {
+            color: #ff8c00;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .contact-info a {
+            color: #ff8c00;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .store-links {
+            margin-bottom: 20px;
+        }
+        .store-links a {
+            display: block;
+            color: #ff8c00;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        .store-links a:hover {
+            text-decoration: underline;
+        }
+        .menu-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            display: none;
+            font-size: 30px;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                background-color: #ffa07a;
+                width: 100%;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+            .menu-icon {
+                display: block;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <h1>Filippagni - Contatti</h1>
+        <p>Contattaci per maggiori informazioni o acquisti</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi siamo</a>
+        <a href="blog.html">Blog</a>
+        <a href="prodotti.html">Prodotti</a>
+        <a href="contatti.html">Contatti</a>
+    </nav>
+    <div class="container">
+        <div class="contact-info">
+            <h2>Contattaci</h2>
+            <p>Email: <a href="mailto:gallorinifilippo@gmail.com">gallorinifilippo@gmail.com</a></p>
+            <p>Telefono: <a href="tel:+393512987735">351 298 7735</a></p>
+        </div>
+        <div class="store-links">
+            <h2>Acquista gli Articoli</h2>
+            <a href="https://www.sephora.it/offerte-di-bellezza/promozioni-speciali/?utm_source=google&utm_medium=cpc&utm_campaign=BrandSephora_search_&utm_term=sephora&gad_source=1&gclid=CjwKCAjw2dG1BhB4EiwA998cqKgTGGrE5ISQz1Ce50DnpVuhO6igqGaajKG_JeORUk5oFipCIstNDxoCLcgQAvD_BwE" target="_blank">sephora</a>
+            <a href="https://www.clarins.it/?gad_source=1&gclid=CjwKCAjw2dG1BhB4EiwA998cqPkCr4-VeF1lsUYn8gZE1zErTcPXefcPPOsTzhjOcsd_ZEZa3_AR7BoCe5cQAvD_BwE" target="_blank">Clarins</a>
+            <a href="https://www.dior.com/it_it?gad_source=1&gclid=CjwKCAjw2dG1BhB4EiwA998cqM-RkmnndztfXseyk_b79c_GbBWDjAQsD3gFipHhv5o3uJbS0Yv8sBoC8YsQAvD_BwE" target="_blank">Dior</a>
+            <a href="https://www.chanel.com/it/?gad_source=1&gclid=CjwKCAjw2dG1BhB4EiwA998cqEnGqF5ClnU6jZLwRppwNyjRXK-N0oqLdK6oM0gpJML4V691c3pXXRoCEQgQAvD_BwE" target="_blank">Chanel</a>
+            <a href="https://faced.com/?utm_source=google&campaign_id=12050278998&ad_id=611669346128&utm_medium=cpc&utm_campaign=[GADS]_IT_Consideration_Search_Brand_Exact&utm_content=116602557256&utm_term=FaceD_Brand_Exact&gclid=gclid&gad_source=1&gclid=CjwKCAjw2dG1BhB4EiwA998cqMCr6BVTCc3hQpwkvfnvWcZnXh0n5DbAIU4b1jkFs_812GSJho3PbhoC3y8QAvD_BwE" target="_blank">Faced</a>
+            <a href="https://www.kikocosmetics.com/it-it/?gad_source=1&gclid=CjwKCAjw2dG1BhB4EiwA998cqEatnX2E189wlPk8KNEwnSNUZydSNzEyGQ7q6YnMB0bJ_eYvOR1H-BoCgb4QAvD_BwE&gclsrc=aw.ds" target="_blank">Kiko</a>
+            <a href="https://us.laneige.com/" target="_blank">Laneige</a>
+            <a href="https://www.collistar.it/solari.html?utm_source=google&utm_medium=cpc&utm_campaign={Campaign}&gad_source=1&gclid=CjwKCAjw2dG1BhB4EiwA998cqMLORk6F1X9dPmP2HEiTI0CXFq4CYGNkxdq-A18AIdqnZMV5mI_2LhoCYTIQAvD_BwE" target="_blank">Collistar</a>
+            <a href="https://www.esteelauder.it/products/1799/product-catalog/best-seller?gad_source=1&gclid=CjwKCAjw2dG1BhB4EiwA998cqJ9OdQFM2BCZ3y4xmPY9odlm63Emo0oBnk_EIv4gRfi2zeaq1GiP2hoCCQoQAvD_BwE&gclsrc=aw.ds" target="_blank">Estee Lauder</a>
+            <a href="https://clinians.it/" target="_blank">Clinians</a>
+        </div>
+    </div>
+</body>
+</html>

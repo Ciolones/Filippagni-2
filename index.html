@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filippagni - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:  #fff7e6;
+            color: #333;
+        }
+        header {
+            background-color: #ffb347;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        nav {
+            background-color: #ff9a7f;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ff8c00;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1 {
+            color: #ff8c00;
+        }
+        .menu-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            display: none;
+            font-size: 30px;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                background-color: #ff9a7f;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+            .menu-icon {
+                display: block;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <h1>Filippagni</h1>
+        <p>Il tuo punto di riferimento per la skincare</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi siamo</a>
+        <a href="blog.html">Blog</a>
+        <a href="prodotti.html">Prodotti</a>
+        <a href="contatti.html">Contatti</a>
+    </nav>
+    <div class="container">
+        <h1>Benvenuti su Filippagni</h1>
+        <p>Scopri i migliori consigli di skincare, recensioni di prodotti e guide passo-passo per mantenere la tua pelle sana e radiosa.</p>
+        <p>Esplora il nostro blog per aggiornamenti costanti e non perdere le nostre sezioni dedicate per conoscerci meglio e scoprire i nostri prodotti preferiti.</p>
+    </div>
+</body>
+</html>
